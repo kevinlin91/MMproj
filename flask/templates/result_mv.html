@@ -1,0 +1,50 @@
+<head>
+
+  <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">
+
+
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+
+  <script src="http://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+   	<style type="text/css">
+		body{height:100%;
+		   width:100%;
+		   /* backgroun image ref: http://dna.yiihuu.com/w/pp-1229583.html*/
+		   background-image:url(/static/background2.jpg);/*your background image*/  
+		   background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+		   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
+		   background-position: center;	
+		   /*css hack for ie*/     
+		   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
+		   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')";
+		}
+	</style>
+</head>
+
+
+
+<body>
+
+  <video id="my-video" class="video-js" controls preload="auto" width="720" height="540"
+
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+
+    <source src="/static/result.mp4" type='video/mp4'>
+
+
+    <p class="vjs-no-js">
+
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+
+    </p>
+
+  </video>
+
+  <a href="/upload">Back to upload page</a>
+  
+  <script src="https://vjs.zencdn.net/7.0.3/video.js"></script>
+
+</body>
